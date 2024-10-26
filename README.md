@@ -127,7 +127,7 @@ The visualization are as follows:
 
 ## Conclusion
 
-This project demonstrates a powerful and efficient approach to solving the fake news detection problem using DistilBERT. The model achieves a 99.76% accuracy on the validation set, with near-perfect precision, recall, and F1-score across both classes. With tools like Weights & Biases (WandB), the project provides a reproducible and transparent workflow, making it easy to track and improve model performance over time.
+This project demonstrates a powerful and efficient approach to solving the fake news detection problem using `DistilBERT`. The model achieves a 99.76% accuracy on the validation set, with near-perfect precision, recall, and F1-score across both classes. With tools like `WandB`, the project provides a reproducible and transparent workflow, making it easy to track and improve model performance over time.
 
 This model can be further improved by:
 
