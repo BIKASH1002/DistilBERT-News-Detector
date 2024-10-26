@@ -2,9 +2,37 @@
 
 ## Content
 
+- [Overview](!overview)
+
+- [Setup](!setup)
+
+- [Features](!features)
+
+- [Dataset](!dataset)
+
+- [Procedure](!procedure)
+
+- [Training Configuration](!training-configuration)
+
+- [Results](!results)
+
+- [Visualization with WandB](!visualization-with-wandb)
+
+- [Conclusion](!conclusion)
+
 ## Overview
 
+<div align = "justify">
+
 This project showcases the development of a Fake News Detector using DistilBERT, a lightweight LLM model. The model is trained to classify news articles as either Real or Fake, achieving high accuracy and excellent performance metrics. This repository also demonstrates the use of Hugging Face’s transformers library and Weights & Biases (WandB) for experiment tracking, ensuring a reproducible and well-documented workflow.
+
+## Setup
+
+- **Google Colab:** for development and training via T4 GPU
+
+- **DistilBERT:** for training
+
+- **WandB:** for tracking training and analysis
 
 ## Features
 
@@ -15,14 +43,6 @@ This project showcases the development of a Fake News Detector using DistilBERT,
 - **Experiment Tracking with WandB:** Real-time logging of metrics and model performance.
 
 - **Visualizations:** Confusion matrix, classification report, and loss trends plotted to analyze model behavior.
-
-## Setup
-
-- **Google Colab:** for development and training via T4 GPU
-
-- **DistilBERT:** for training
-
-- **WandB:** for tracking training and analysis
 
 ## Dataset
 
@@ -87,7 +107,7 @@ training_args = TrainingArguments(
 )
 ```
 
-## Performance Metrics
+## Results
   
 Below is the classification report generated after evaluating the model on the validation dataset:
 
@@ -147,9 +167,11 @@ This model can be further improved by:
 
 - Deploying the model as an API for real-time fake news detection.
 
+</div>
+
 ## Credits
 
-- Kaggle: for dataset
+- **Kaggle:** for fake news dataset
 
 ## Contributing
 
