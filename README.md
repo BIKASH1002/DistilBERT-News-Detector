@@ -6,23 +6,23 @@ This project focuses on developing an AI-powered Fake News Detector using Distil
 
 ## Content
 
-- [Overview](!overview)
+- [Overview](#overview)
 
-- [Setup](!setup)
+- [Setup](#setup)
 
-- [Features](!features)
+- [Features](#features)
 
-- [Dataset](!dataset)
+- [Dataset](#dataset)
 
-- [Procedure](!procedure)
+- [Procedure](#procedure)
 
-- [Training Configuration](!training-configuration)
+- [Training Configuration](#training-configuration)
 
-- [Results](!results)
+- [Results](#results)
 
-- [Visualization with WandB](!visualization-with-wandb)
+- [Visualization with WandB](#visualization-with-wandb)
 
-- [Conclusion](!conclusion)
+- [Conclusion](#conclusion)
 
 ## Overview
 
