@@ -1,5 +1,9 @@
 # Fake News Detector: DistilBERT-Based News Classification
 
+<div align = "justify">
+
+This project focuses on developing an AI-powered Fake News Detector using DistilBERT, a lightweight transformer model. With the increasing spread of misinformation, identifying fake news has become crucial. This solution fine-tunes a pre-trained language model on a dataset of real and fake news articles to classify news accurately. By leveraging tools like Hugging Face's `transformers` library and Weights & Biases (WandB) for tracking experiments, the project offers a transparent and reproducible workflow. The end result is a high-performance model that achieves 99.76% accuracy, making it highly effective in distinguishing real from fake news.
+
 ## Content
 
 - [Overview](!overview)
@@ -21,8 +25,6 @@
 - [Conclusion](!conclusion)
 
 ## Overview
-
-<div align = "justify">
 
 This project showcases the development of a Fake News Detector using DistilBERT, a lightweight LLM model. The model is trained to classify news articles as either Real or Fake, achieving high accuracy and excellent performance metrics. This repository also demonstrates the use of Hugging Face’s transformers library and Weights & Biases (WandB) for experiment tracking, ensuring a reproducible and well-documented workflow.
 
