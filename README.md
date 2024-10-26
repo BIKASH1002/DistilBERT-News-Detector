@@ -16,6 +16,14 @@ This project showcases the development of a Fake News Detector using DistilBERT,
 
 - **Visualizations:** Confusion matrix, classification report, and loss trends plotted to analyze model behavior.
 
+## Setup
+
+- **Google Colab:** for development and training via T4 GPU
+
+- **DistilBERT:** for training
+
+- **WandB:** for tracking training and analysis
+
 ## Dataset
 
 The dataset can be accessed from Kaggle. It consist of following files: 
@@ -64,6 +72,21 @@ The test dataset, which contains only the text column, was tokenized in the same
 
 The confusion matrix, along with the trend of training and validation losses over the epochs, was plotted. These visualizations helped confirm the model's stability and effectiveness in classifying news articles accurately.
 
+## Training Configuration
+
+```python
+training_args = TrainingArguments(
+    output_dir='./results',                 # Directory to save model checkpoints
+    num_train_epochs=3,                     # Number of training epochs
+    per_device_train_batch_size=16,         # Batch size for training
+    per_device_eval_batch_size=16,          # Batch size for evaluation
+    warmup_steps=500,                       # Number of warmup steps
+    weight_decay=0.01,                      # Weight decay to prevent overfitting
+    logging_dir='./logs',                   # Directory to save logs
+    evaluation_strategy='epoch'             # Evaluate the model at the end of each epoch
+)
+```
+
 ## Performance Metrics
 
 Below is the classification report generated after evaluating the model on the validation dataset:
@@ -88,3 +111,28 @@ The training and validation loss over 3 epochs are as follows:
 | 2     | 0.0139        | 0.0113          |
 | 3     | 0.0007        | 0.0126          |
 
+## Visualization with WandB
+
+During training, key metrics such as runtime, loss, and steps per second were logged using Weights & Biases (WandB). Below are key insights from the WandB visualizations:
+
+**1. Loss Trend:** Validation loss decreased consistently, indicating convergence.
+
+**2. Steps per Second:** Measured across epochs to monitor efficiency.
+
+**3. Runtime Analysis:** Helps identify any bottlenecks during training.
+
+The visualization are as follows:
+
+![weights and bias](https://github.com/user-attachments/assets/891cf0ce-c63d-45ae-84fa-c253983ef15e)
+
+## Conclusion
+
+This project demonstrates a powerful and efficient approach to solving the fake news detection problem using DistilBERT. The model achieves a 99.76% accuracy on the validation set, with near-perfect precision, recall, and F1-score across both classes. With tools like Weights & Biases (WandB), the project provides a reproducible and transparent workflow, making it easy to track and improve model performance over time.
+
+This model can be further improved by:
+
+- Fine-tuning on larger datasets.
+
+- Implementing hyperparameter optimization using WandB sweeps.
+
+- Deploying the model as an API for real-time fake news detection.
