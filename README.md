@@ -24,6 +24,6 @@ The dataset can be accessed from Kaggle. It consist of following files:
 
 - **Test Data:** Unlabeled dataset used for generating predictions.
 
-NOTE:- The dataset in the repository is just the junk of the dataset. For complete access of dataset [click here](https://www.kaggle.com/competitions/smm-hw2-fakenewsdetecion/data) 
+NOTE:- The dataset in the repository is just the chunk of the dataset. For complete access of dataset [click here](https://www.kaggle.com/competitions/smm-hw2-fakenewsdetecion/data) 
 
 
