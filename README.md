@@ -76,20 +76,22 @@ The confusion matrix, along with the trend of training and validation losses ove
 
 ```python
 training_args = TrainingArguments(
-    output_dir='./results',                 # Directory to save model checkpoints
-    num_train_epochs=3,                     # Number of training epochs
-    per_device_train_batch_size=16,         # Batch size for training
-    per_device_eval_batch_size=16,          # Batch size for evaluation
-    warmup_steps=500,                       # Number of warmup steps
-    weight_decay=0.01,                      # Weight decay to prevent overfitting
-    logging_dir='./logs',                   # Directory to save logs
-    evaluation_strategy='epoch'             # Evaluate the model at the end of each epoch
+    output_dir = './results',                 # Directory to save model checkpoints
+    num_train_epochs = 3,                     # Number of training epochs
+    per_device_train_batch_size = 16,         # Batch size for training
+    per_device_eval_batch_size = 16,          # Batch size for evaluation
+    warmup_steps = 500,                       # Number of warmup steps
+    weight_decay = 0.01,                      # Weight decay to prevent overfitting
+    logging_dir = './logs',                   # Directory to save logs
+    evaluation_strategy = 'epoch'             # Evaluate the model at the end of each epoch
 )
 ```
 
 ## Performance Metrics
-
+  
 Below is the classification report generated after evaluating the model on the validation dataset:
+
+<div align = "center">
 
 | Metric      | Precision | Recall | F1-Score | Support |
 |-------------|-----------|--------|----------|---------|
@@ -99,17 +101,25 @@ Below is the classification report generated after evaluating the model on the v
 | Macro Avg   | 1.00      | 1.00   | 1.00     | 4153    |
 | Weighted Avg| 1.00      | 1.00   | 1.00     | 4153    |
 
+</div>
+
 The confusion matrix generated during validation, which shows the number of correctly and incorrectly predicted instances is as follows:
 
-![confusion matrix](https://github.com/user-attachments/assets/09c6e175-458d-4e41-88cd-69385772029d)
+<div align = "center">
+    <img src = "https://github.com/user-attachments/assets/09c6e175-458d-4e41-88cd-69385772029d" alt = "Confusion matrix" width = 50%>
+</div>
 
 The training and validation loss over 3 epochs are as follows:
 
+<div align = "center">
+  
 | Epoch | Training Loss | Validation Loss |
 |-------|---------------|-----------------|
 | 1     | 0.0317        | 0.0188          |
 | 2     | 0.0139        | 0.0113          |
 | 3     | 0.0007        | 0.0126          |
+
+</div>
 
 ## Visualization with WandB
 
@@ -123,7 +133,7 @@ During training, key metrics such as runtime, loss, and steps per second were lo
 
 The visualization are as follows:
 
-![weights and bias](https://github.com/user-attachments/assets/891cf0ce-c63d-45ae-84fa-c253983ef15e)
+![weights and bias](https://github.com/user-attachments/assets/7a59de46-1de8-40e4-b154-fa04a0195c0f)
 
 ## Conclusion
 
@@ -136,3 +146,15 @@ This model can be further improved by:
 - Implementing hyperparameter optimization using WandB sweeps.
 
 - Deploying the model as an API for real-time fake news detection.
+
+## Credits
+
+- Kaggle: for dataset
+
+## Contributing
+
+Contributions are welcome. Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
