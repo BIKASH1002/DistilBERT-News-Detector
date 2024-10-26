@@ -20,6 +20,8 @@ This project focuses on developing an AI-powered Fake News Detector using Distil
 
 - [Training Configuration](#training-configuration)
 
+- [Essential Components](#essential-components)
+
 - [Results](#results)
 
 - [Visualization with WandB](#visualization-with-wandb)
@@ -110,6 +112,34 @@ training_args = TrainingArguments(
     evaluation_strategy = 'epoch'             # Evaluate the model at the end of each epoch
 )
 ```
+
+## Essential Components
+
+There are files required for the Hugging Face Transformer model such as the tokenizer configuration, model configuration, vocabulary, and tokenizer JSON. These files are essential components of the AutoTokenizer and AutoModelForSequenceClassification models used in your code. These files are fetched and stored in cache for further processing.
+
+Here’s a brief explanation of what each of these files does:
+
+- **tokenizer_config.json:**
+
+Contains settings related to the tokenizer (e.g., normalization, tokenization options).
+
+- **config.json:**
+
+Stores the configuration for the pre-trained model, such as the number of layers, number of attention heads, and label mapping.
+
+- **vocab.txt:**
+
+The vocabulary file containing all possible tokens (words, subwords, or characters) that the tokenizer uses for encoding text.
+
+- **tokenizer.json:**
+
+Contains a detailed representation of the tokenizer logic, including token-to-ID mappings and special tokens (like `[CLS]`, `[SEP]`).
+
+The progress can be shown as follows when the model is trained:
+
+<div align = "center">
+    <img src = "https://github.com/user-attachments/assets/6bbe90d7-4887-4699-97bb-514c91c4d7d4" alt = "Confusion matrix" width = 50%>
+</div>
 
 ## Results
   
