@@ -1,3 +1,5 @@
+![banner](https://github.com/user-attachments/assets/a26a4380-907f-4cd7-acf5-390ec658947d)
+
 # Fake News Detector: DistilBERT-Based News Classification
 
 <div align = "justify">
