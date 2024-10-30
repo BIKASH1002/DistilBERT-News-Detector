@@ -34,7 +34,7 @@ This project showcases the development of a Fake News Detector using DistilBERT,
 
 ## Setup
 
-- **Google Colab:** for development and training via T4 GPU
+- **Google Colab:** for development and training acceleration via T4 GPU
 
 - **DistilBERT:** for training
 
